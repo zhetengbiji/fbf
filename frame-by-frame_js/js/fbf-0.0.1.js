@@ -1,9 +1,9 @@
 /* ！~。~
- * fbf.js-0.0.1;
+ * fbf.js-0.0.2;
  * 用于产生css3逐帧动画
  * 目前只应用于webkit内核浏览器
  * 作者微博：折腾笔记
- * date:2015-7-18;
+ * date:2015-7-19;
  * 依赖jq;
  * 压缩版本采用YUI Compressor
  */
@@ -22,7 +22,7 @@
 			end:0,//结束帧,缺省为0------------------------------->必填
 		}
 		var settings = $.extend({},config, options);//将一个空对象做为第一个参数,以保护默认config不受污染
-		($('#fbfs').length)||$('head').append('<style id="f_b_f_s">');		
+		($('#f_b_f_s').length)||$('head').append('<style id="f_b_f_s">');		
 		var $bfbs=$('#f_b_f_s'),
 			bfbsh='',
 			bfbimg=new Image,
