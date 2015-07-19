@@ -5,7 +5,7 @@ Produced a range of frame by frame animation of javascript.
 依赖关系：jQuery
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
-<span>目前版本0.0.1</span><br>
+<span>目前版本0.0.2</span><br>
 ##最简单的用法示例
 <pre>
 $('#fbf').fbf({
