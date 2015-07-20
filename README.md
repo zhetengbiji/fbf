@@ -14,6 +14,8 @@ $('#fbf').fbf({
 		end:7//结束桢
 });
 </pre>
+<p>图片的生成可以用这个<a href="https://github.com/iwangx/sprite">sprite</a>工具<br>
+导入全部图，小图横排即可</p>
 ##一个复杂示例
 <pre>
 $('#fbf').fbf({
