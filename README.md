@@ -2,10 +2,11 @@
 Produced a range of frame by frame animation of javascript.
 ## frame-by-frame.js
 这是一个用来产生css3逐帧动画的jQuery插件；<br>
-依赖关系：jQuery
+依赖关系：jQuery<br>
+支持回调函数，支持链式操作
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
-<span>目前版本0.0.2</span><br>
+<span>目前版本0.0.3</span><br>
 ##最简单的用法示例
 <pre>
 $('#fbf').fbf({
@@ -27,5 +28,7 @@ $('#fbf').fbf({
 		loop:true,//循环，默认开启----->可选参数
 		start:0,//开始帧，0为第一帧------------------------------->必填
 		end:7,//结束帧,缺省为0------------------------------->必填
+},function(){
+alert('单次播放结束')；
 });
 </pre>

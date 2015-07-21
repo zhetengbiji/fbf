@@ -1,14 +1,14 @@
 /* ！~。~
- * fbf.js-0.0.2;
+ * fbf.js-0.0.3;
  * 用于产生css3逐帧动画
  * 目前只应用于webkit内核浏览器
  * 作者微博：折腾笔记
- * date:2015-7-19;
+ * date:2015-7-21;
  * 依赖jq;
  * 压缩版本采用YUI Compressor
  */
 ;(function ($) {
-	$.fn.fbf = function(options) {
+	$.fn.fbf = function(options,callback) {
 		var $this=this;
 		$this.css('-webkit-animation','none');
 		var config={
@@ -17,7 +17,7 @@
 			img:'',//图片地址(如用相对路径请以实际发生动画的页面为准)------------------------------->必填
 			frames:0,//总帧数，默认自动计算----->可选参数
 			speed:100,//帧速，默认0.1秒----->可选参数
-			loop:true,//循环，默认开启----->可选参数
+			loop:false,//循环，默认关闭----->可选参数
 			start:0,//开始帧，0为第一帧------------------------------->必填
 			end:0,//结束帧,缺省为0------------------------------->必填
 		}
@@ -40,7 +40,11 @@
 				'background':'url("'+bfbimg.src+'") 0 0 no-repeat',
 				'-webkit-animation':'f_b_f '+(((settings.end||settings.frames)-settings.start)*settings.speed/1000)+'s steps('+((settings.end)-settings.start)+' , end) '+loop
 			});
+			if(typeof callback == "function")		
+			setTimeout(callback,((settings.end||settings.frames)-settings.start)*settings.speed);
+			
 		});	
+		return $this;
 	}
 })(jQuery);
 
