@@ -6,7 +6,7 @@ Produced a range of frame by frame animation of javascript.
 支持回调函数，支持链式操作
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
-<span>目前版本0.0.3</span><br>
+<span>目前版本0.0.4</span><br>
 ##最简单的用法示例
 <pre>
 $('#fbf').fbf({

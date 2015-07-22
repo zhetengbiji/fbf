@@ -1,9 +1,9 @@
 /* ！~。~
- * fbf.js-0.0.3;
+ * fbf.js-0.0.4;
  * 用于产生css3逐帧动画
  * 目前只应用于webkit内核浏览器
  * 作者微博：折腾笔记
- * date:2015-7-21;
+ * date:2015-7-22;
  * 依赖jq;
  * 压缩版本采用YUI Compressor
  */
@@ -38,6 +38,7 @@
 				'width':settings.width+'px',
 				'height':settings.height+'px',
 				'background':'url("'+bfbimg.src+'") 0 0 no-repeat',
+				'background-size':'auto 100%',
 				'-webkit-animation':'f_b_f '+(((settings.end||settings.frames)-settings.start)*settings.speed/1000)+'s steps('+((settings.end)-settings.start)+' , end) '+loop
 			});
 			if(typeof callback == "function")		
