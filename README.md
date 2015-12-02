@@ -21,7 +21,7 @@ $('#fbf').fbf({
 		end:7//结束桢
 });
 </pre>
-<p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>工具<br>
+<p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>(<a href="http://www.smallqiao.com/124147.html">图片生成工具原出处</a>)工具<br>
 导入全部图，横排即可</p>
 ##一个复杂示例
 <pre>
