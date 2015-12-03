@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="utf-8">
 		<title>fbf.js</title>
 		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-		<!--<script src="js/fbf-0.0.4.js" type="text/javascript" charset="utf-8"></script>-->
-		<script src="js/fbf-0.0.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/fbf-0.0.5.js"></script>-->
+		<script src="js/fbf-0.0.5.min.js"></script>
 	</head>
 	<style type="text/css">
 		body {
@@ -16,19 +17,24 @@
 			height: 300px;
 		}
 	</style>
+
 	<body>
 		<div id="fbf"></div>
 	</body>
 	<script type="text/javascript">
-	$(function(){
-		$('#fbf').fbf({
-			img:'img/fbf.jpg',
-			start:0,
-			end:7
-		},function(){
-			alert('播放完毕');
+		$(function() {
+			var $fbf = new FBF('#fbf', {
+				img: 'img/fbf.jpg',
+			});
+//			$fbf.play();
+//			倒序播放
+			$fbf.play({
+				start: 7,
+				end: 0,
+			},function(){
+				console.log('播放完毕');
+			});
 		});
-	})
-		
 	</script>
+
 </html>
