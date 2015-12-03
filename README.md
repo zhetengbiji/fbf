@@ -6,9 +6,7 @@ Produced a range of frame by frame animation of javascript.
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
 <span>目前版本0.0.5</span><br>
-## 下一版本改进目标：
-1. 图片改为支持图片数组；
-2. 图片展示方式由背景改为图像；动画采用3D变换
+
 ## 最简单的用法示例
 初始化
 <pre>
@@ -46,3 +44,7 @@ $fbf.play({
 	console.log('播放完毕');
 });
 </pre>
+
+## 下一版本改进目标：
+1. 图片改为支持图片数组；
+2. 图片展示方式由背景改为图像；动画采用3D变换
