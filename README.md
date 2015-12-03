@@ -7,16 +7,8 @@ Produced a range of frame by frame animation of javascript.
 ----------------
 <span>目前版本0.0.5</span><br>
 ##下一版本改进目标：
-<<<<<<< HEAD
 1. 图片改为支持图片数组；
 2. 图片展示方式由背景改为图像；动画采用3D变换
-=======
-1. 配置开始结束帧改为可选参数；
-2. 默认改为不循环播放；
-3. 图片改为支持图片数组；
-4. 方法改为init()和play();
-5. 图片展示方式由背景改为图像；动画采用3D变换
->>>>>>> origin/master
 ##最简单的用法示例
 初始化
 <pre>
@@ -24,15 +16,11 @@ var $fbf = new FBF('#fbf', {
 	img: 'img/fbf.jpg',
 });
 </pre>
-<<<<<<< HEAD
 播放
 <pre>
 $fbf.play();
 </pre>
 <p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>工具<br>
-=======
-<p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>(<a href="http://www.smallqiao.com/124147.html">图片生成工具原出处</a>)工具<br>
->>>>>>> origin/master
 导入全部图，横排即可</p>
 ##一个最复杂示例
 初始化
