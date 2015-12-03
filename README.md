@@ -6,10 +6,10 @@ Produced a range of frame by frame animation of javascript.
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
 <span>目前版本0.0.5</span><br>
-##下一版本改进目标：
+## 下一版本改进目标：
 1. 图片改为支持图片数组；
 2. 图片展示方式由背景改为图像；动画采用3D变换
-##最简单的用法示例
+## 最简单的用法示例
 初始化
 <pre>
 var $fbf = new FBF('#fbf', {
@@ -22,7 +22,7 @@ $fbf.play();
 </pre>
 <p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>工具<br>
 导入全部图，横排即可</p>
-##一个最复杂示例
+## 一个最复杂示例
 初始化
 <pre>
 var $fbf = new FBF('#fbf', {
