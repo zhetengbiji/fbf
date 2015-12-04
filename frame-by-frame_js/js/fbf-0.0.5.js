@@ -7,7 +7,7 @@
  * 依赖jQuery;
  */
 ;
-(function($, window, document, undefined) {
+(function($, window) {
 
 	window.FBF = function(ele, opt) {
 		this.$element = $(ele);
@@ -46,6 +46,7 @@
 			var settings = this.options;
 			var $fbfImg = this.$fbfImg;
 			$element.css({
+				'-webkit-animation': 'none',
 				'width': settings.width + 'px',
 				'height': settings.height + 'px',
 				'background': 'url("' + $fbfImg[0].src + '") 0 0 no-repeat',
@@ -55,7 +56,7 @@
 			if (typeof settings.end !== "number") settings.end = settings.frames - 1;
 		},
 		reInit: function(opt) {
-			this.options = $.extend({}, this.options, object, opt);
+			this.options = $.extend({}, this.options, opt);
 			this.init();
 		},
 		play: function(opt, callback) {
@@ -71,7 +72,7 @@
 				var settings = $.extend({}, $this.options, opt);
 				var fNum = Math.abs(settings.end - settings.start);
 				settings.loop ? settings.end += 1 : loop = 'normal forwards';
-				$fbfStyle.html('@-webkit-keyframes ' + animationName + '{0% {background-position: ' + (-settings.width * (settings.start)) + 'px 0;}100% {background-position: ' + (-((settings.end)) * settings.width) + 'px 0;}}');
+				$fbfStyle.html('@-webkit-keyframes ' + animationName + '{0% {-webkit-transform: translate3d(0, 0, 0);background-position: ' + (-settings.width * (settings.start)) + 'px 0;}100% {-webkit-transform: translate3d(0, 0, 0);background-position: ' + (-((settings.end)) * settings.width) + 'px 0;}}');
 				$element.css({
 					'-webkit-animation': animationName + ' ' + (fNum * settings.speed / 1000) + 's steps(' + fNum + ' , end) ' + loop
 				});
@@ -88,4 +89,4 @@
 
 		}
 	}
-})(jQuery, window, document);
+})(jQuery, window);
