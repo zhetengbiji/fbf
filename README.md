@@ -18,7 +18,7 @@ var $fbf = new FBF('#fbf', {
 <pre>
 $fbf.play();
 </pre>
-<p>图片的生成可以用这个<a href="http://pan.baidu.com/s/1o6Imtp4">图片拼接</a>工具<br>
+<p>图片的生成可以用这个<a href="https://github.com/zhetengbiji/img-Splice">图片拼接</a>工具<br>
 导入全部图，横排即可</p>
 ## 一个最复杂示例
 初始化
@@ -46,5 +46,5 @@ $fbf.play({
 </pre>
 
 ## 下一版本改进目标：
-1. 图片改为支持图片数组；
+1. 图片改为支持图片数组或者竖排序列帧；
 2. 图片展示方式由背景改为图像；动画采用3D变换
