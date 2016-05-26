@@ -5,7 +5,7 @@ Produced a range of frame by frame animation of javascript.
 依赖关系：jQuery<br>
 <p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
 ----------------
-<span>目前版本0.0.6</span><br>
+<span>目前版本0.0.7</span><br>
 
 ## 最简单的用法示例
 初始化
@@ -17,6 +17,10 @@ var $fbf = new FBF('#fbf', {
 播放
 <pre>
 $fbf.play();
+</pre>
+停止
+<pre>
+$fbf.stop();
 </pre>
 <p>图片的生成可以用这个<a href="https://github.com/zhetengbiji/img-Splice">图片拼接</a>工具<br>
 导入全部图，横排即可</p>
