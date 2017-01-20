@@ -9,24 +9,24 @@ Produced a range of frame by frame animation of javascript.
 
 ## 最简单的用法示例
 初始化
-<pre>
+```javascript
 var $fbf = new FBF('#fbf', {
 	img: 'img/fbf.jpg',
 });
-</pre>
+```
 播放
-<pre>
+```javascript
 $fbf.play();
-</pre>
+```
 停止
-<pre>
+```javascript
 $fbf.stop();
-</pre>
+```
 <p>图片的生成可以用这个<a href="https://github.com/zhetengbiji/img-Splice">图片拼接</a>工具<br>
 导入全部图，横排即可</p>
 ## 一个最复杂示例
 初始化
-<pre>
+```javascript
 var $fbf = new FBF('#fbf', {
 	width: 200, //舞台宽度默认元素宽度------->可选参数
 	height: 300, //舞台高度默认元素高度------->可选参数
@@ -37,9 +37,9 @@ var $fbf = new FBF('#fbf', {
 	start: 0, //开始帧，0为第一帧------->可选参数
 	end: 7, ////结束帧,缺省为最后一帧------->可选参数
 });
-</pre>
+```
 播放
-<pre>
+```javascript
 //	倒序播放
 $fbf.play({
 	start: 7,
@@ -47,8 +47,7 @@ $fbf.play({
 }, function() {
 	console.log('播放完毕');
 });
-</pre>
-
+```
 ## 下一版本改进目标：
 1. 图片改为支持图片数组或者竖排序列帧；
 2. 图片展示方式由背景改为图像；动画采用3D变换
