@@ -1,31 +1,34 @@
 # fbf.js
 Produced a range of frame by frame animation of javascript.
 ##  frame-by-frame.js
-这是一个用来产生css3逐帧动画的插件；<br>
-依赖关系：jQuery<br>
-<p>作者微博：<a href="http://weibo.com/u/1326039884">折腾笔记</a></p>
-----------------
-<span>目前版本0.0.7</span><br>
+这是一个用来产生css3逐帧动画的插件；  
+依赖关系：jQuery
+
+作者微博：[折腾笔记](http://weibo.com/u/1326039884)
 
 ## 最简单的用法示例
 初始化
+
 ```javascript
 var $fbf = new FBF('#fbf', {
 	img: 'img/fbf.jpg',
 });
 ```
 播放
+
 ```javascript
 $fbf.play();
 ```
 停止
+
 ```javascript
 $fbf.stop();
 ```
-<p>图片的生成可以用这个<a href="https://github.com/zhetengbiji/img-Splice">图片拼接</a>工具<br>
-导入全部图，横排即可</p>
+图片的生成可以用这个[图片拼接](https://github.com/zhetengbiji/img-Splice)工具  
+导入全部图，横排即可
 ## 一个最复杂示例
 初始化
+
 ```javascript
 var $fbf = new FBF('#fbf', {
 	width: 200, //舞台宽度默认元素宽度------->可选参数
@@ -38,7 +41,9 @@ var $fbf = new FBF('#fbf', {
 	end: 7, ////结束帧,缺省为最后一帧------->可选参数
 });
 ```
+
 播放
+
 ```javascript
 //	倒序播放
 $fbf.play({
@@ -48,6 +53,7 @@ $fbf.play({
 	console.log('播放完毕');
 });
 ```
+
 ## 下一版本改进目标：
 1. 图片改为支持图片数组或者竖排序列帧；
 2. 图片展示方式由背景改为图像；动画采用3D变换
